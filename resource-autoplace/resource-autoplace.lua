@@ -90,8 +90,6 @@ local onethird = tne(1)/3 -- Looks nicer in output than 0.333333
 -- More obscure parameters can be read about in the inline comments.
 local function resource_autoplace_settings(params)
   local default = config.presets[params.preset_name] or config.presets.default
-  log(serpent.block(default))
-  log(serpent.block(params))
   local name = params.name
   local order = params.order or default.order
 
