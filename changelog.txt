@@ -1,0 +1,17 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 31.01.2023
+  Changes:
+    - Refactored the autoplace library to be more flexible and configurable from other mods too
+    - Changed name from "RedRafe's Resources" fo "Lean Lesources"
+    - Changed thumbnail
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 22.01.2023
+  Fixes:
+    - Fixed wrong filepath
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 22.01.2023
+  Info:
+    - Release
