@@ -19,7 +19,7 @@ The `resource-autoplace` directory is organized as follows:
 - `expression-to-ascii-math.lua`: helper functions for *RA*, do not touch.
 - `noise.lua`: helper functions for *RA*, do not touch.
 - `resource-autoplace.lua`: the core functions of *RA*, theoretically there's no need to touch this file, but edge-cases and specific behaviors of resource placement may require some tweaking (hopefully not!).
-- `resource-autoplace.md`: documentation.
+- `README.md`: documentation.
 
 ---
 
