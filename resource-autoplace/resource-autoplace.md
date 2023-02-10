@@ -107,8 +107,8 @@ Here there's a brief explanation of each parameter. The parameters can be specif
 - `double_density_distance` :: Number, (**_optional_**), (default: 1300), distance at which patches have twice as much stuff in them. In-between starting area and `double_density_distance`, the values will be clamped in that range, while outside `double_density_distance`, the richness will use a multiplier "generally" based on `double_density_distance` as unit.
 - `freq_multiplier_coefficient` :: Number, (**_optional_**), (default: 1), multiplies the net frequency of resources by specified value.
 - `has_starting_area_placement` :: Bool, (**_optional_**), (default: nil), values: **true** - place in starting area and outside starting area independently, **false** - place outside starting area but not inside, **nil** - place everywhere as if there is no starting area.
-- `min_radius_expression` :: Number, (**_optional_**), (default: 32),
-- `minimum_richness` :: Number, (**_optional_**), (default: 0),
+- `min_radius_expression` :: Number, (**_optional_**), (default: 32), forces the upper limit for patches' radius.
+- `minimum_richness` :: Number, (**_optional_**), (default: 0), minimum amount of ore placed.
 - `name` :: String, (**_required_**), (default: nil), the internal name of that ResourcePrototype to be placed, used as the default autoplace control name and patch set name. Must be specified at resource level, should not be specified in presets.
 - `order` :: String, (**_optional_**), (default: "d"), order of appearance, similar to other Prototypes's order behaviour.
 - `patch_set_name` :: String, (**_optional_**), (default: `name`), name of the patch set; patches sets of the same name and `seed` will overlap. Default: uses `name` property. Should not be specified in presets.
@@ -123,7 +123,7 @@ Here there's a brief explanation of each parameter. The parameters can be specif
 - `seed` :: Number, (**_optional_**), (default: 100), random seed to use when generating patch positions.
 - `size_multiplier_coefficient` :: Number, (**_optional_**), (default: 1), if specified, multiplies the net size of patches by its value, similar (and in combination) to the slider in map generation. i.e. 200% size + 2.00 `size_multiplier_coefficient` = 400% size.
 - `starting_amount` :: Number, (**_optional_**), (default: 40'000), base amount for starting area richness, the final total amount is computed as `starting_amount * base_density * starting_frequency_multiplier * size_multiplier`.
-- `starting_resource_placement_radius` :: Number, (**_optional_**), (default: 120),
+- `starting_resource_placement_radius` :: Number, (**_optional_**), (default: 120), the radius within starting resources should be placed.
 - `starting_rq_factor_coefficient` :: Number, (**_optional_**), (default: 1),if specified, multiplies the net `rq_factor` of patches in starting area by this value. Higher = larger diameter but less density, lower = smaller diameter, higher density.
 - `starting_rq_factor_multiplier` :: Number, (**_optional_**), (default: 1), refers to the ratio of the radius of a patch in the starting area to the cube root of its quantity. Gets also multiplied by 1/7 before being applied.
 
